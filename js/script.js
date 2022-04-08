@@ -11,6 +11,8 @@ Applica uno stile differente a seconda del valore dell’indice per i multipli d
 
 */
 
+// MILESTONE 1
+
 const limit = 100;
 
 const divThree = 3;
@@ -19,13 +21,21 @@ const divFive = 5;
 
 
 for(let i = 1; i <= limit; i++){
+
+   const containerDom = document.querySelector(".container");
+   const boxDom = document.createElement("div");
+   boxDom.className = "box";
+
    if(i % 3 === 0 && i % 5 === 0){
-       console.log("FizzBuzz");
+       boxDom.append("fizzbuzz");
    }else if(i % 5 === 0){
-       console.log("Buzz");
+       boxDom.append("buzz");
    }else if(i % 3 === 0){
-       console.log("Fuzz");
+       boxDom.append("fizz");
    }else{
-       console.log(i);
+       boxDom.append(i);
    }
+
+   containerDom.append(boxDom);
 };
+

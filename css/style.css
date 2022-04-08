@@ -34,3 +34,15 @@ h1{
     background-color: rgb(19, 137, 178);
     margin: 15px;
 }
+
+.fizz{
+    content: "Fizz";
+}
+
+.buzz{
+    content: "Buzz";
+}
+
+.fizzbuzz{
+    content: "FizzBuzz";
+}
