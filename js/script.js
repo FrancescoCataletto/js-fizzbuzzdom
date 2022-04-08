@@ -28,10 +28,13 @@ for(let i = 1; i <= limit; i++){
 
    if(i % 3 === 0 && i % 5 === 0){
        boxDom.append("fizzbuzz");
+       boxDom.classList.add("red");
    }else if(i % 5 === 0){
        boxDom.append("buzz");
+       boxDom.classList.add("yellow");
    }else if(i % 3 === 0){
        boxDom.append("fizz");
+       boxDom.classList.add("green");
    }else{
        boxDom.append(i);
    }
